@@ -5,20 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <title>ArtForAll</title>
 </head>
 <body>
-    <nav class="navbar container">
-        <div class="navbar-brand">
-            ArtForAll
+    <nav class="navbar">
+        <div class="navbar-brand text-center">
+            <a href="/">
+                <img width="150px" src="/img/logo.jpg" alt="ArtForAll">
+            </a>
         </div>
         <div class="navbar-list">
             <ul class="navbar-nav">
-                <li class="navbar-nav-item"><a class="navbar-nav-itemLink" href="index.html">Ana Sayfa</a></li>
+                <li class="navbar-nav-item"><a class="navbar-nav-itemLink navbar-nav-activeLink" href="index.html">Ana Sayfa</a></li>
                 <li class="navbar-nav-item"><a class="navbar-nav-itemLink" href="products.html">Ürünler</a></li>
                 <li class="navbar-nav-item"><a class="navbar-nav-itemLink" href="about.html">Hakkımızda</a></li>
             </ul>
         </div>
     </nav>
+
+    <section class="content">
+        <div class="banner">
+            <p>ArtForAll sitesine Hoşgeldiniz</p>
+        </div>
+        <div>
+            <h2 class="content-firstTitle" style="color: var(--color1);">KATAGORİLER</h2>
+            <div class="homeCategories">
+                <div class="homeCategory" category-name="gitarlar">
+                    <a class="homeCategory-link" href="#">
+                        <img class="img-fluid" src="img/icon_home-kategori_gitar.png" alt="">
+                    </a>
+                </div>
+                <div class="homeCategory" category-name="piyano">
+                    <a class="homeCategory-link" href="#">
+                        <img class="img-fluid" src="img/icon_home-kategori_piyano.png" alt="">
+                    </a>
+                </div>
+                <div class="homeCategory" category-name="keman">
+                    <a class="homeCategory-link" href="#">
+                        <img class="img-fluid" src="img/icon_home-kategori_yayli.png" alt="">
+                    </a>
+                </div>
+                <div class="homeCategory" category-name="davul">
+                    <a class="homeCategory-link" href="#">
+                        <img class="img-fluid" src="img/icon_home-kategori_davul.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <a href="/">
+                <img width="150px" src="/img/logo.jpg" alt="ArtForAll">
+            </a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="fw-bold">Adres :</span><span style="color: var(--color3);"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, voluptas!</span> </p>
+            <p><span class="fw-bold">Tel :</span> <a style="color: var(--color3)" href="tel:021211111111">0212 111 11 11</a></p>
+        </div>
+    </footer>
 </body>
 </html>

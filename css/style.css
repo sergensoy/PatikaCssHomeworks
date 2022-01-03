@@ -9,6 +9,7 @@
     --color2: #6B4F4F;
     --color3: #EED6C4;
     --color4: #FFF3E4;
+    --black: #000000;
 }
 
 a{
@@ -20,8 +21,45 @@ ul,ol,dl{
 }
 
 .container{
-    padding: 1rem 1rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.fw-light{
+    font-weight: lighter;
+}
+
+.fst-italic{
+    font-style: italic;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.fs-2{
+    font-size: 2rem;
+}
+
+/**************************** Navigation ****************************/
 
 .navbar{
     display: flex;
@@ -29,7 +67,7 @@ ul,ol,dl{
     flex-direction: row;
     background-color: var(--color1);
     color: var(--color2);
-    margin-bottom: 2rem;
+    height: auto;
 }
 
 .navbar-brand{
@@ -48,7 +86,7 @@ ul,ol,dl{
 .navbar-nav-item{
     display: inline;
     float: left;
-    min-width: 85px;
+    min-width: 90px;
     text-align: center;
 }
 
@@ -70,3 +108,146 @@ ul,ol,dl{
     font-weight: bold;
 
 }
+
+.navbar-nav-activeLink{
+    color: var(--color3);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/**************************** Content ****************************/
+
+.content{
+    min-height: 650px;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.content-firstTitle{
+    color: var(--color2);
+    margin: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.banner{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background: var(--color4);
+    padding: 4rem 1rem;
+    color: var(--color1);
+    font-family: Roboto;
+}
+
+.banner>p{
+    font-family: inherit;
+}
+
+.homeCategories{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homeCategory{
+    display: block;
+    border-radius: 50%;
+    max-width: 200px;
+    transition: all .5s ease-in;
+}
+
+.homeCategory:hover{
+    transform: scale(1.1,1.1);
+}
+
+.homeCategory-link{
+    display: inline-block;
+    width: 100%;
+}
+
+.homeCategory[category-name="gitarlar"]{
+    background-color: #FFDF91;
+}
+
+.homeCategory[category-name="piyano"]{
+    background-color: #EAAC7F;
+}
+
+.homeCategory[category-name="keman"]{
+    background-color: #91684A;
+}
+
+.homeCategory[category-name="davul"]{
+    background-color: #FAEBE0;
+}
+
+/**************************** Footer ****************************/
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--color2);
+}
+
+.footer-sitemap > ul li{
+    list-style: none;
+}
+
+.footer-sitemap > ul li:nth-child(n){
+    margin-bottom: 1rem;
+}
+
+.footer-sitemap > ul li:not(:last-child){
+    margin-bottom: none;
+}
+
+/**************************** About-Us ****************************/
+
+.content-pagePart{
+    min-height: 500px;
+    font-size: 1.2rem;
+    text-align:justify;
+}
+
+/**************************** Product ****************************/
+
+.row{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product{
+    width: 25%;
+    height: auto;
+    margin: 1rem 1rem;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-img > img{
+    border: 2px solid var(--color1);
+    border-radius: 15px;
+}
+
+.product-detail > .name{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+}
+
+.product-detail > .price{
+    margin-top: 1rem;
+}
+
